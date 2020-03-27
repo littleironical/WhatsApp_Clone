@@ -1,6 +1,4 @@
-# projectxi
-
-A new Flutter application.
+# Work-Shacking
 
 ## Getting Started
 
