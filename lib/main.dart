@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'ChatsScreen.dart';
+
 void main(){
   runApp(Application());
 }
@@ -41,23 +43,18 @@ class _ApplicationState extends State<Application> with SingleTickerProviderStat
             controller: _tabController,
             indicatorColor: Colors.white,
             tabs: <Widget>[
-              Icon(Icons.camera_alt),
+              Tab(icon: Icon(Icons.camera_alt),),
               Tab(child: Text('CHATS', style: TextStyle(fontSize: 15.0),),),
               Tab(child: Text('STATUS', style: TextStyle(fontSize: 15.0),),),
               Tab(child: Text('CALLS', style: TextStyle(fontSize: 15.0),),),
             ],
           ),
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          backgroundColor: Color(0xFF25D366),
-          child: Icon(Icons.message),
-        ),
         body: TabBarView(
           controller: _tabController,
           children: <Widget>[
             Center(child: Text('CAMERA'),),
-            Center(child: Text('CHATS'),),
+            ChatsScreen(),
             Center(child: Text('STATUS'),),
             Center(child: Text('CALLS'),),
           ],
