@@ -22,7 +22,6 @@ List<int> items = List();
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Scaffold(
           body:  ListView.builder(
             itemCount: items.length,
             itemBuilder: (BuildContext context, int index){
@@ -34,8 +33,7 @@ List<int> items = List();
           backgroundColor: Color(0xFF25D366),
           child: Icon(Icons.message),
          ),
-        )
-      ),
+      )
     );
   }
 }
