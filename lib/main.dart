@@ -24,6 +24,9 @@ class _ApplicationState extends State<Application> with SingleTickerProviderStat
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        accentColor: Color(0xFF075E54),
+      ),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
@@ -33,12 +36,14 @@ class _ApplicationState extends State<Application> with SingleTickerProviderStat
               fontSize: 20.0,
             ),
           ),
+
           actions: <Widget>[
             Icon(Icons.search),
             Padding(padding: EdgeInsets.only(right: 10.0),),
             Icon(Icons.more_vert),
             Padding(padding: EdgeInsets.only(right: 10.0),),
           ],
+
           bottom: TabBar(
             controller: _tabController,
             indicatorColor: Colors.white,
@@ -50,6 +55,7 @@ class _ApplicationState extends State<Application> with SingleTickerProviderStat
             ],
           ),
         ),
+        
         body: TabBarView(
           controller: _tabController,
           children: <Widget>[
@@ -59,7 +65,7 @@ class _ApplicationState extends State<Application> with SingleTickerProviderStat
             Center(child: Text('CALLS'),),
           ],
         ),
-      ),
+      )
     );
   }
 }
