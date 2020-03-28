@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'ChatsScreen.dart';
+import 'CHATS/ChatsScreen.dart';
+import 'STATUS/StatusScreen.dart';
+import 'CALLS/CallsScreen.dart';
 
 void main(){
   runApp(Application());
@@ -39,7 +41,7 @@ class _ApplicationState extends State<Application> with SingleTickerProviderStat
 
           actions: <Widget>[
             Icon(Icons.search),
-            Padding(padding: EdgeInsets.only(right: 10.0),),
+            Padding(padding: EdgeInsets.only(right: 15.0),),
             Icon(Icons.more_vert),
             Padding(padding: EdgeInsets.only(right: 10.0),),
           ],
@@ -61,8 +63,8 @@ class _ApplicationState extends State<Application> with SingleTickerProviderStat
           children: <Widget>[
             Center(child: Text('CAMERA'),),
             ChatsScreen(),
-            Center(child: Text('STATUS'),),
-            Center(child: Text('CALLS'),),
+            StatusScreen(),
+            CallsScreen(),
           ],
         ),
       )
