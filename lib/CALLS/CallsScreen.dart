@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projectxi/main.dart';
 
 import 'DummyData.dart';
 
@@ -26,49 +27,49 @@ class _CallsScreenState extends State<CallsScreen> {
              children: <Widget>[
               DummyData(
                  name: 'Ravina Tandan',
-                 message: 'Wash your hands properly',
-                 time: 'Yesterday',
+                 time: 'Yesterday, 18:49',
+                 netimage: ravinatandon,
                ),
                spaceBetween(),
                
                DummyData(
                  name: 'Tanmay Bhatt',
-                 message: 'Where are you? I\'m waiting outside',
-                 time: '3/7/20',
+                 time: 'March 24, 18:26',
+                 netimage: tanmaybhatt,
                ),
                spaceBetween(),
 
                DummyData(
-                 name: 'Debbo Ratnani',
-                 message: 'Can I take your pics?',
-                 time: '3/5/20',
+                 name: 'Dabboo Ratnani',
+                 time: 'March 13, 13:26',
+                 netimage: dabbooratnani,
                ),  
 
                DummyData(
                  name: 'Akshay Kumar',
-                 message: 'Hey buddy...how are you',
-                 time: '09:16',
+                 time: 'March 9, 21:16',
+                 netimage: akshaykumar,
                ),
                spaceBetween(),
 
                DummyData(
                  name: 'Varun Dhavan',
-                 message: 'Happy Quarantine buddy',
-                 time: '3/24/20',
+                 time: 'March 5, 14:06',
+                 netimage: varundhavan,
                ),
                spaceBetween(),
                
                DummyData(
                  name: 'Ashish Chanchlani',
-                 message: 'I\'m going tto release my new video today',
-                 time: '3/20/20',
+                 time: 'February 24, 11:51',
+                 netimage: ashishchanchlani,
                ),
                spaceBetween(),
 
                DummyData(
                  name: 'Bhuvan Bam',
-                 message: 'I\'m going to United States tommorrow',
-                 time: '3/26/20',
+                 time: 'February 22, 21:02',
+                 netimage: bhuvanbam,
                ),
              ],
           ),
