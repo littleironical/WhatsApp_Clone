@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projectxi/main.dart';
 
 import 'DummyData.dart';
 
@@ -27,13 +28,15 @@ class _StatusScreenState extends State<StatusScreen> {
                ListTile(
                  leading: CircleAvatar(
                      radius: 26.0,
-                     child: Text('ME',
-                       style: TextStyle(
-                       fontSize: 25.0,
-                       color: Colors.white,
-                      ),
-                    ),
-                    backgroundColor: Color(0xFF075E54),
+                     backgroundColor: Colors.grey,
+                     backgroundImage: NetworkImage(myimg),
+                     child: Container(
+                       alignment: Alignment.bottomRight,
+                       child: Icon(Icons.add_circle,
+                         size: 22.0,
+                         color: Color(0xFF25D366),
+                       ),
+                     ),
                   ),
 
                   title: Text('My Status',
@@ -64,22 +67,17 @@ class _StatusScreenState extends State<StatusScreen> {
                 ),
 
                DummyData(
-                 name: 'Roman Reigns',
+                 name: 'Ashish Chanchlani',
                  time: '24 minutes ago',
+                 netimage: ashishchanchlani,
                ),
                spaceBetween(),
 
                DummyData(
                  name: 'Bhuvan Bam',
                  time: '57 minutes ago',
+                 netimage: bhuvanbam,
                ),
-               spaceBetween(),
-
-               DummyData(
-                 name: 'John Cena',
-                 time: '59 minutes ago',
-               ),
-               spaceBetween(),
 
                SizedBox(
                  height: 30.0,
@@ -94,64 +92,46 @@ class _StatusScreenState extends State<StatusScreen> {
                     ),
                   ),
                 ),
+
+               DummyData(
+                 name: 'Carry Minati',
+                 time: '59 minutes ago',
+                 netimage: carryminati,
+               ),
+               spaceBetween(), 
                
                DummyData(
-                 name: 'Hardik Kumar',
+                 name: 'Tanmay Bhatt',
                  time: 'Yesterday, 23:44',
+                 netimage: tanmaybhatt,
                ),
                spaceBetween(),
                
                DummyData(
                  name: 'Varun Dhavan',
                  time: 'Yesterday, 22:43',
+                 netimage: varundhavan,
                ),
                spaceBetween(),
                
                DummyData(
                  name: 'Akshay Kumar',
                  time: 'Yesterday, 21:10',
+                 netimage: akshaykumar,
                ),
                spaceBetween(),
                
                DummyData(
                  name: 'Ravina Tandan',
                  time: 'Yesterday, 20:16',
+                 netimage: ravinatandon,
                ),
                spaceBetween(),
                
                DummyData(
-                 name: 'Debbo Ratnani',
+                 name: 'Dabboo Ratnani',
                  time: 'Yesterday, 19:37',
-               ),
-               spaceBetween(),
-               
-               DummyData(
-                 name: 'Sundar Pichai',
-                 time: 'Yesterday, 19:30',
-               ),
-               spaceBetween(),
-               
-               DummyData(
-                 name: 'Narendra Modi',
-                 time: 'Yesterday, 13:05',
-               ),
-               spaceBetween(),
-               
-               DummyData(
-                 name: 'Carry Minati',
-                 time: 'Yesterday, 11:14',
-               ),
-               spaceBetween(),
-               
-               DummyData(
-                 name: 'Tanmay Bhatt',
-                 time: 'Yesterday, 10:06',
-               ),
-               spaceBetween(),
-               
-               DummyData(
-                 name: 'Ashish Chanchlani',
-                 time: 'Yesterday, 09:03',
+                 netimage: dabbooratnani,
                ),
              ],
           ),
