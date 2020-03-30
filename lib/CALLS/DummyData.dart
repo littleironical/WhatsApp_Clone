@@ -1,36 +1,19 @@
 import 'package:flutter/material.dart';
 
-int i=0, x;
-
 class DummyData extends StatelessWidget {
-DummyData({this.name, this.message, this.time});
+DummyData({this.name, this.time, this.netimage});
   
 final name;
-final message;
 final time;
-
-String letters(){
-  for(i=0; name[i]!='\0'; i++){
-    if(name[i]==' '){
-      x=i+1;
-      break;
-    }
-  }
-  return(name[0] + name[x]);
-}
+final netimage;
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
     leading: CircleAvatar(
+      backgroundColor: Colors.grey,
       radius: 26.0,
-      child: Text(letters(),
-        style: TextStyle(
-          fontSize: 25.0,
-          color: Colors.white,
-        ),
-      ),
-      backgroundColor: Color(0xFF075E54),
+      backgroundImage: NetworkImage(netimage),
     ),
 
     title: Text(name,
@@ -39,14 +22,23 @@ String letters(){
       ),
     ),
 
-    subtitle: Text(message,
-      style: TextStyle(
-        fontSize: 15.0,
-      ),
+    subtitle: Row(
+      children: <Widget>[
+        Icon(Icons.transit_enterexit,
+          color: Colors.green,
+          size: 20.0,
+        ),
+        SizedBox(width: 5.0),
+        Text(time,
+          style: TextStyle(
+            fontSize: 15.0,
+          ),
+        ),
+      ],
     ),
 
     trailing: Icon(Icons.call,
-      color: Color(0xFF075E54),
+      color: Color(0xFF128C7E),
     ),
 
     onTap: () {},
