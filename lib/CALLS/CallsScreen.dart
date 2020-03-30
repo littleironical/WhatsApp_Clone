@@ -68,7 +68,7 @@ class _CallsScreenState extends State<CallsScreen> {
 
                DummyData(
                  name: 'Bhuvan Bam',
-                 time: 'February 22, 21:02',
+                 time: 'Febryary 22, 21:02',
                  netimage: bhuvanbam,
                ),
              ],
