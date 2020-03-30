@@ -109,7 +109,7 @@ class _ChatsScreenState extends State<ChatsScreen> {
                ),
                spaceBetween(),
                DummyData(
-                 name: 'Debbo Ratnani',
+                 name: 'Dabboo Ratnani',
                  message: 'Can I take your pics?',
                  time: '3/5/20',
                  netimage: dabbooratnani,
