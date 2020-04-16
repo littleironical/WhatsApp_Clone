@@ -4,4 +4,4 @@
 
 # Project Image
 
-<img src = "ss1.png">
+<img src = "ss1.jpg">
