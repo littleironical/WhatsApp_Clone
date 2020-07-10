@@ -1,6 +1,6 @@
 # _WhatsApp_Clone_
 
-## This is my first attempt to clone any app. And this is the WhatsApp clone app. I am trying to make this similar to the original WhatsApp as far as  possible.
+## Trying to make an application that will look exactly like WhatsApp.
 
 # Project Image
 
